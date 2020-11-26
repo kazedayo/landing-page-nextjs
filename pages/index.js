@@ -9,7 +9,10 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Mobile Developer(Swift & Flutter) and an avid Hololive simp. Code for fun since 2015, code for food since 2020.</p>
+        <p>
+          Mobile Developer(Swift & Flutter) and an avid Hololive simp. 
+          Code for fun since 2015, code for food since 2020.
+        </p>
       </section>
     </Layout>
   )
