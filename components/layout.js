@@ -2,9 +2,10 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { SocialIcon } from 'react-social-icons'
 
 const name = 'Winson Lam'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Landing Page'
 
 export default function Layout({ children, home }) {
   return (
@@ -13,7 +14,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="My Landing Page"
         />
         <meta
           property="og:image"
@@ -33,6 +34,10 @@ export default function Layout({ children, home }) {
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <div className={styles.socialIcons}>
+              <SocialIcon url="https://github.com/kazedayo"/>
+              <SocialIcon url="https://twitter.com/kaze_hayashi97"/>
+            </div>
           </>
         ) : (
           <>
