@@ -1,21 +1,15 @@
 .footer{
-    background-color: #fff;
     margin-top: 1rem;
     padding: 1rem;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    backdrop-filter: blur(1rem);
 }
 
 .footerText {
     font-size: 0.7rem;
     text-align: center;
     color: gray;
-}
-
-@media (prefers-color-scheme: dark) {
-    .footer {
-        background-color: #222;
-    }
 }
