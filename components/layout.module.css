@@ -10,13 +10,6 @@
   align-items: center;
 }
 
-.footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  size: 0.5rem;
-}
-
 .headerImage {
   width: 6rem;
   height: 6rem;
@@ -34,6 +27,8 @@
 .socialIcons {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  gap: 10px;
+}
+
+.socialIcon {
+  margin: 0 0.5rem;
 }

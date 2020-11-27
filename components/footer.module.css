@@ -1,4 +1,5 @@
 .footer{
+    background-color: #fff;
     margin-top: 1rem;
     padding: 1rem;
     position: fixed;
@@ -11,4 +12,10 @@
     font-size: 0.7rem;
     text-align: center;
     color: gray;
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        background-color: #222;
+    }
 }

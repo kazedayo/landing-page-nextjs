@@ -36,8 +36,8 @@ export default function Layout({ children, home }) {
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
             <div className={styles.socialIcons}>
-              <SocialIcon url="https://github.com/kazedayo"/>
-              <SocialIcon url="https://twitter.com/kaze_hayashi97"/>
+              <SocialIcon className={styles.socialIcon} url="https://github.com/kazedayo"/>
+              <SocialIcon className={styles.socialIcon} url="https://twitter.com/kaze_hayashi97"/>
             </div>
           </>
         ) : (
