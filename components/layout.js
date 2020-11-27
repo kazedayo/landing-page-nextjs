@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from './layout.module.css'
+import Footer from './footer'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { SocialIcon } from 'react-social-icons'
@@ -66,6 +67,7 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
+      <Footer text="Powered by Next.js"/>
     </div>
   )
 }
