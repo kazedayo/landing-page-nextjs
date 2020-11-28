@@ -36,8 +36,8 @@ export default function Layout({ children, home }) {
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
             <div className={styles.socialIcons}>
-              <SocialIcon className={styles.socialIcon} url="https://github.com/kazedayo"/>
-              <SocialIcon className={styles.socialIcon} url="https://twitter.com/kaze_hayashi97"/>
+              <SocialIcon className={styles.socialIcon} fgColor="#fff" bgColor="#333" url="https://github.com/kazedayo"/>
+              <SocialIcon className={styles.socialIcon} fgColor="#fff" url="https://twitter.com/kaze_hayashi97"/>
             </div>
           </>
         ) : (
@@ -67,7 +67,9 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      <Footer text="Powered by Next.js"/>
+      <Footer>
+        Powered by <a href="https://nextjs.org">Next.js</a>
+      </Footer>
     </div>
   )
 }
