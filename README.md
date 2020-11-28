@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+My landing page built using [Next.js](https://nextjs.org).
+
+Deployed on [kazeteitoku.xyz](https://kazeteitoku.xyz)

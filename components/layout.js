@@ -1,7 +1,5 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
 import Footer from './footer'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { SocialIcon } from 'react-social-icons'
 
@@ -10,7 +8,7 @@ export const siteTitle = 'Landing Page'
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="max-w-xl py-4 mx-24 my-12">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -26,18 +24,18 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="flex-initial flex-col items-center">
         {home ? (
           <>
             <img
               src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+              className="w-32 h-32 rounded-full"
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-            <div className={styles.socialIcons}>
-              <SocialIcon className={styles.socialIcon} fgColor="#fff" bgColor="#333" url="https://github.com/kazedayo"/>
-              <SocialIcon className={styles.socialIcon} fgColor="#fff" url="https://twitter.com/kaze_hayashi97"/>
+            <h1 className="text-4xl leading-5 font-extrabold tracking-tight my-6">{name}</h1>
+            <div className="flex flex-row">
+              <SocialIcon className="mx-1" fgColor="#fff" bgColor="#333" url="https://github.com/kazedayo"/>
+              <SocialIcon className="mx-1" fgColor="#fff" url="https://twitter.com/kaze_hayashi97"/>
             </div>
           </>
         ) : (
@@ -46,14 +44,14 @@ export default function Layout({ children, home }) {
               <a>
                 <img
                   src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                  className="w-32 h-32 rounded-full"
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className="text-2xl leading-6 my-4">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>{name}</a>
               </Link>
             </h2>
           </>
@@ -61,14 +59,14 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className="mt-12">
           <Link href="/">
             <a>← Back to home</a>
           </Link>
         </div>
       )}
       <Footer>
-        Powered by <a href="https://nextjs.org">Next.js</a>
+        Powered by <a href="https://nextjs.org">Next.js</a> & <a href="https://tailwindcss.com">Tailwind CSS</a>
       </Footer>
     </div>
   )
