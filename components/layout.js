@@ -9,7 +9,7 @@ const aboutText = `
 `
 export const siteTitle = 'Landing Page'
 
-export default function Layout() {
+export default function Layout({children}) {
   return (
     <div className="py-4 mx-12 md:mx-24 my-12">
       <Head>
@@ -30,6 +30,7 @@ export default function Layout() {
       <div>
         <AboutCard name={name} aboutText={aboutText}/>
       </div>
+      {children}
       <Footer>
         Powered by <a href="https://nextjs.org">Next.js</a> & <a href="https://tailwindcss.com">Tailwind CSS</a>
       </Footer>
