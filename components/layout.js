@@ -11,7 +11,7 @@ export const siteTitle = 'Landing Page'
 
 export default function Layout({children}) {
   return (
-    <div className="py-4 mx-12 md:mx-24 my-12">
+    <div className="py-4 mx-12 md:mx-24 my-6 md:my-12">
       <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
