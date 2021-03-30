@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Footer from './footer'
 import AboutCard from './about_card'
+import React from 'react'
 
 const name = 'Winson Lam'
 const aboutText = `
@@ -9,7 +10,7 @@ const aboutText = `
 `
 export const siteTitle = 'Landing Page'
 
-export default function Layout({children}) {
+export default function Layout({children}:{children: React.ReactNode}) {
   return (
     <div className="py-4 mx-12 md:mx-24 my-6 md:my-12">
       <Head>

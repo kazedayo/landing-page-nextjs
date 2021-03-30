@@ -1,6 +1,6 @@
 import { SocialIcon } from 'react-social-icons'
 
-export default function AboutCard({name, aboutText}) {
+export default function AboutCard({name, aboutText}: {name: string, aboutText: string}) {
     return (
         <>
             <header className="flex-auto flex-col items-center">
