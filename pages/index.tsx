@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
+import ShowcasePanel from '../components/showcase_panel'
 
 export default function Home() {
   return (
@@ -7,9 +8,7 @@ export default function Home() {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <div>
-        <img className="shadow-md" src="/images/hehe.svg" width="100px" height="100px"/>
-      </div>
+      <ShowcasePanel/>
     </Layout>
   )
 }

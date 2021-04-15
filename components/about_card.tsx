@@ -22,6 +22,7 @@ export default function AboutCard({name, aboutText}: {name: string, aboutText: s
                     <p>{aboutText}</p>
                 </section>
             </main>
+            <img className="shadow-md" src="/images/hehe.svg" width="100px" height="100px"/>
         </>
     )
 }
