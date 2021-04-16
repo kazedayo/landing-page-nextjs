@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 export default function AboutCard({ name, aboutText }: { name: string, aboutText: string }) {
     return (
         <>
-            <div className="px-8 py-8">
+            <div className="px-8 md:px-16 py-8 md:py-16">
                 <header className="flex-auto flex-col items-center">
                     <img
                         src="/images/profile.jpg"
