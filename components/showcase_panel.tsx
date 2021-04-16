@@ -4,7 +4,7 @@ import GithubLink from './github_link'
 export default function ShowcasePanel() {
     return (
         <>
-            <div className="px-8 md:px-16 py-8 md:py-16 md:overflow-y-scroll">
+            <div className="px-8 md:px-16 py-8 md:py-16 md:overflow-auto">
                 <h1 className="text-2xl font-bold leading-8">Personal Projects</h1>
                 <div className="py-2 max-w-screen-xl">
                     <div className="flex flex-row items-center space-x-2">
