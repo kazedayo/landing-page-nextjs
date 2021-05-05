@@ -7,7 +7,7 @@ export default function ShowcasePanel() {
         <>
             <div className="px-8 md:px-16 py-8 md:py-16 md:overflow-auto">
                 <h1 className="text-2xl font-bold leading-8">Personal Projects</h1>
-                <div className="flex flex-row py-2 max-w-screen-lg">
+                <div className="md:flex md:flex-row py-2 max-w-screen-lg">
                     <ShowcaseSector 
                         title="hkGalden" 
                         description="Originally an iOS client for a small Hong Kong forum hkGalden written in Swift, now rewritten in Flutter."
