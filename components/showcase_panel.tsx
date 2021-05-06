@@ -1,4 +1,3 @@
-import ImageContainer from './image_container'
 import GithubLink from './github_link'
 import ShowcaseSector from './showcase_sector'
 
@@ -7,7 +6,7 @@ export default function ShowcasePanel() {
         <>
             <div className="px-8 md:px-16 py-8 md:py-16 md:overflow-auto">
                 <h1 className="text-2xl font-bold leading-8">Personal Projects</h1>
-                <div className="md:flex md:flex-row py-2 max-w-screen-lg">
+                <div className="grid lg:grid-cols-2 gap-x-12 py-2 max-w-screen-lg">
                     <ShowcaseSector 
                         title="hkGalden" 
                         description="Originally an iOS client for a small Hong Kong forum hkGalden written in Swift, now rewritten in Flutter."
@@ -16,7 +15,7 @@ export default function ShowcasePanel() {
                     />
                     <ShowcaseSector 
                         title="HoloSchedule" 
-                        description="Simple app to keep track of stream schedules of Hololive members and ability to subscribe and receive notifications when a stream is live. Written in Flutter"
+                        description="Simple app to keep track of Hololive members' stream schedules and receive notifications. Written in Flutter."
                         imgSrc="/images/project2.png"
                         repo="kazedayo/hololive_app"
                     />

@@ -6,13 +6,13 @@ import React from 'react'
 const name = 'Winson Lam'
 const aboutText = `
   Mobile Developer(Swift & Flutter) and an avid Hololive simp.
-  Code for fun since 2015, code for food since 2020.
+  Code for fun since 2017, code for food since 2020.
 `
 export const siteTitle = 'Landing Page'
 
 export default function Layout({children}:{children: React.ReactNode}) {
   return (
-    <div className="md:flex">
+    <div className="lg:flex">
       <Head>
           <link rel="icon" href="/favicon.ico" />
           <meta
@@ -28,10 +28,10 @@ export default function Layout({children}:{children: React.ReactNode}) {
           <meta name="og:title" content={siteTitle} />
           <meta name="twitter:card" content="summary_large_image" />
         </Head>
-      <aside className="w-full md:h-screen md:sticky top-0 overflow-hidden md:w-1/3">
+      <aside className="w-full lg:h-screen lg:sticky top-0 overflow-hidden lg:w-1/3">
         <AboutCard name={name} aboutText={aboutText}/>
       </aside>
-      <main className="w-full md:w-2/3 py-6 md:py-0 overflow-auto md:px-6">
+      <main className="w-full lg:w-2/3 py-6 lg:py-0 overflow-auto lg:px-6">
       {children}
       </main>
       <Footer>
